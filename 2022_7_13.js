@@ -43,3 +43,4 @@ function highAndLow(numbers) {
 
   return result.join(" ");
 }
+
