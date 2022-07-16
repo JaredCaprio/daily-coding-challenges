@@ -23,3 +23,31 @@ function testEven(n) {
     return n % 2 === 0;
 }
 
+/* 3. Given a non-empty array of integers, return the result of multiplying the values together in order. Example: */
+function grow(x) {
+  return x.reduce((a, b) => {
+    return a * b;
+  });  
+}
+
+
+/* 4. 
+Given an integral number, determine if it's a square number:
+    In mathematics, a square number or perfect square is an integer 
+    that is the square of an integer; in other words, it is the product
+    of some integer with itself.
+
+The tests will always use some integral number, so don't worry about that 
+in dynamic typed languages.*/
+
+var isSquare = function (n) {
+  if (Math.ceil(Math.sqrt(n)) == Math.floor(Math.sqrt(n))) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+
+
+
