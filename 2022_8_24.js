@@ -19,4 +19,24 @@ function toBinary(n) {
   let result = (n >>> 0).toString(2);
   return parseInt(result);
 }
+/*3. Finish the solution so that it sorts the passed in array of numbers. 
+If the function passes in an empty array or null/nil value then it should return an empty array.*/
+const solution = (nums) => nums === null ? [] : nums.sort((a,b) => a - b);
+
+/* 4. Messi goals function
+
+Messi is a soccer player with goals in three leagues:
+
+    LaLiga
+    Copa del Rey
+    Champions
+
+Complete the function to return his total number of goals in all three leagues.
+
+Note: the input will always be valid. */
+
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  return laLigaGoals + copaDelReyGoals + championsLeagueGoals
+}
+
 
