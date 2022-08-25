@@ -39,4 +39,21 @@ function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
   return laLigaGoals + copaDelReyGoals + championsLeagueGoals
 }
 
+/* 5. You get any card as an argument. Your task is to return the suit of this card (in lowercase).
 
+Our deck (is preloaded):
+
+('3♣') -> return 'clubs'
+('3♦') -> return 'diamonds'
+('3♥') -> return 'hearts'
+('3♠') -> return 'spades'
+*/
+
+function defineSuit(card) {
+  if (card.charCodeAt(card.length - 1) === 9827) return "clubs";
+  if (card.charCodeAt(card.length - 1) === 9830) return "diamonds";
+  if (card.charCodeAt(card.length - 1) === 9829) return "hearts";
+  if (card.charCodeAt(card.length - 1) === 9824) return "spades";
+}
+
+/*6.  */
