@@ -9,8 +9,7 @@ Requirements
     NOTE on performance: There are no fancy optimizations required, but still the most trivial solutions might time out. Numbers go up to 2^31 ( or similar, depending on language ). Looping all the way up to n, or n/2, will be too slow.
 */
 const isPrime = (num) => {
-  for (let i = 2, s = Math.sqrt(num); i <= s; i++) {
-    console.log(num, i, s);
+  for (let i = 2, s = Math.sqrt(num); i <= s; i++) {    
     if (num % i === 0) return false;
   }
   return num > 1;
