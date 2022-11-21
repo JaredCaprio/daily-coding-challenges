@@ -21,3 +21,28 @@ function palindromization(element, n){
   if (element == "" || n < 2) return "Error!"
   return s + c
 }
+
+/* 2. https://www.codewars.com/kata/51dda84f91f5b5608b0004cc/train/javascript
+Write a function that takes an integer and returns an array [A, B, C], where A is the number 
+of multiples of 3 (but not 5) below the given integer, B is the number of multiples of 5 
+(but not 3) below the given integer and C is the number of multiples of 3 and 5 below the 
+given integer.
+
+For example, solution(20) should return [5, 2, 1]
+*/
+function solution(number) {
+  let fizz = 0;
+  let buzz = 0;
+  let fizzBuzz = 0;
+  for (let i = 1; i < number; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {      
+      fizzBuzz++;
+    } else if (i % 3 === 0) {      
+      fizz++;
+    } else if (i % 5 === 0) {      
+      buzz++;
+    } 
+  }
+
+  return new Array(fizz, buzz, fizzBuzz);
+}
