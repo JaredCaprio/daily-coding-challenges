@@ -4,6 +4,7 @@ The array is either entirely comprised of odd integers or entirely comprised of 
 Write a method that takes the array as an argument and returns this "outlier" N.
 Examples
 
+
 [2, 4, 0, 100, 4, 11, 2602, 36]
 Should return: 11 (the only odd number)
 
